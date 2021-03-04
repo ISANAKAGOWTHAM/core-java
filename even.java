@@ -1,16 +1,14 @@
 import java.util.Scanner;
-class positive{
+class even{
 public static void main(String [] args){
 int n;
 Scanner sc= new Scanner(System.in);
 System.out.println("enter the number");
 n=sc.nextInt();
-if(n>0)
-System.out.println("positive number");
-else if(n<0)
-System.out.println("negative number");
+if(n%2==0)
+System.out.println("even number number");
+else 
+System.out.println("not a even  number");
 
-else
-System.out.println("invalid");
 }
 }
