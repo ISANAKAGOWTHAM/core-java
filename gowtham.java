@@ -1,28 +1,26 @@
-package das;
-
+import java.util.Scanner;
 public class gowtham {
-
-	public static void main(String[] args) {
-		for(int i=1; i<=10; i++) { 
-			for(int j=0;j<=10-i;j++) {
-				System.out.print(" ");
+	public static void main(String [] args) {
+		int uppercase=0;
+		int lowercase=0;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the string");
+		String str=sc.nextLine();
+		for(int i=0;i<str.length();i++) {
+			char ch=str.charAt(i);
+			if(ch>='A' && ch<='Z') {
+				uppercase++;
+				
 			}
+			else if(ch>='a' && ch<='z') {
+				lowercase++;
+				
+			}
+		}
+		System.out.println("uppercase characters :"+uppercase);
+		System.out.println("lowercase characters :"+lowercase);
 			
-				for(int k=1;k<=2*i-1;k++) {
-					System.out.print("*");
-			}
-			System.out.println( );
-				
-				
+		
 	}
-	
-	
-  } 
 
 }
-
-		// TODO Auto-generated method stub
-
-	
-
-
